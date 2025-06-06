@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="center nav">
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    Home</a></li>
+                <li><a href="#about"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm179-80h442L480-830 259-720ZM80-120v-80h482q2 21 5 40.5t9 39.5H80Zm600-310v-130h80v90l-80 40ZM800 0q-69-17-114.5-79.5T640-218v-102l160-80 160 80v102q0 76-45.5 138.5T800 0Zm-29-120 139-138-42-42-97 95-39-39-42 43 81 81ZM259-720h442-442Z"/></svg>
+                    About us</a></li>
+                <li><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
+                    Contact</a></li>
+                <li><a href="#services"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+                    Services</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <img src="bh.png" alt="" class="img">
+        <div class="search__container">
+            <input class="search__input" type="text" placeholder="Search">
+        </div>
+        <button>Login</button>
+    </header>
+    <section id="hero">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide"><img src="1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="3.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="1.jpg" alt="Image 4"></div>
+            </div>
+        
+        <!-- Arrows -->
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+
+        <!-- Dots -->
+            <div class="dots" id="dots">
+                <span class="dot" onclick="setSlide(0)"></span>
+                <span class="dot" onclick="setSlide(1)"></span>
+                <span class="dot" onclick="setSlide(2)"></span>
+                <span class="dot" onclick="setSlide(3)"></span>
+            </div>
+        </div>
+
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-box">
+        <h2>Our Journey</h2>
+        <p>
+            With over 50 years of experience, a present and a future that it cultivates and capitalizes with a dynamic of progression and development, 
+            BH Bank is considered today as one of the main players in economic activity in Tunisia.
+        </p>
+        </div>
+
+        <section class="timeline">
+            <div class="timeline-title">Timeline</div>
+            <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>1974</h4>
+                <p>Creation of the National Housing Savings Fund.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>1989</h4>
+                <p>Transformation of the CNEL into a Housing Bank.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>1993</h4>
+                <p>BH was made up of financial, real estate and technological centers.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>2005-2009</h4>
+                <p>Continental Reputation through awards such as Best African Bank for Mortgage Credit.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>2014</h4>
+                <p>New vision and new approach aimed at performance and taking the path of rigor and excellence.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h4>2019</h4>
+                <p>Transformation of the Housing Bank into BH Bank.</p>
+            </div>
+            <h4>
+                BH Bank began to reap the benefits of its development strategy in various areas, 
+                which remains its driver of sustainable development and performance.</h4>
+                <a href="https://www.bh.com.tn/la-banque/presentation" class="learn-more-button">Learn more</a>
+
+            </div>
+        </section>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm currently available for freelance work or full-time positions. If you have a project that needs creative solutions, feel free to reach out.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alex@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="title">Our Services</h1>
+        <div class="services-container">
+            <a href="https://www.bh.com.tn/profils/particulier" class="service-card">Particular</a>
+            <a href="https://www.bh.com.tn/profils/entreprise" class="service-card">Companies</a>
+            <a href="https://www.bh.com.tn/profils/professionnel" class="service-card">Professionals</a>
+            <a href="https://www.bh.com.tn/profils/tunisiens-r%C3%A9sidents-%C3%A0-l%C3%A9tranger" class="service-card">Tunisian Residents Abroad</a>
+            <a href="https://www.bh.com.tn/profils/promoteurs-immobiliers" class="service-card">Real Estate Developers</a>
+            <a href="https://www.bh.com.tn/profils/jeunes" class="service-card">Young People</a>
+            <a href="https://www.bh.com.tn/profils/seniors" class="service-card">Seniors</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+            <img src="bh erased.png" alt="First Skills Logo" class="logo" />
+            </div>
+
+            <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><strong>📍 Find us:</strong><br>18 Avenue Mohamed V Tunis 1023</p>
+            <p><strong>📞 Call us:</strong><br>(+216) 71 126 000<br>(+216) 71 001 800</p>
+            <p><strong>✉️ Email us:</strong><br>contact@bhbank.tn</p>
+            </div>
+
+            <div class="footer-section">
+            <h3>Useful links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Let's Stay Connected</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/BHBank/photos_by"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon"><path fill="white" d="M279.1 288l14.2-92.7h-88.9v-60c0-25.4 12.4-50.1 52.2-50.1h40.4V6.3S260.4 0 225.4 0C141.4 0 89.1 54.1 89.1 144.8v63.5H0v92.7h89.1V512h107.6V288z"/></svg></a>
+                <a href="https://www.linkedin.com/company/bh-bank/?originalSubdomain=tn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path fill="white" d="M100.3 448H7V149.1h93.3V448zm-46.6-338c-29.5 0-53.4-24-53.4-53.5s24-53.5 53.4-53.5c29.5 0 53.4 24 53.4 53.5S83.2 110 53.7 110zM447.9 448h-93.1V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.8-43.8 31.1-2.3 5.5-2.9 13.2-2.9 20.9V448H171.5s1.2-259.1 0-286h93.1v40.5c12.4-19.2 34.6-46.6 84.2-46.6 61.5 0 107.1 40.1 107.1 126.2V448z"/></svg></a>
+                <a href="https://www.instagram.com/bh_bank/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path fill="white" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 190.6c-41.8 0-75.7-33.9-75.7-75.7s33.9-75.7 75.7-75.7 75.7 33.9 75.7 75.7-33.9 75.7-75.7 75.7zm146.4-194.3c0 14.9-12 27-27 27s-27-12.1-27-27 12-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5C386.5 7.8 354.8-.1 319.1 0H128.9C93.2-.1 61.5 7.8 36.2 33.4 9.9 59.6 1.7 91.3 0 127v254c1.7 35.7 9.9 67.3 36.2 93.5C61.5 504.2 93.2 512.1 128.9 512h190.2c35.7.1 67.4-7.9 93.7-34.3 26.3-26.2 34.5-57.8 36.2-93.5v-254zm-48.5 260.6c-.9 19.6-5.4 37-19.3 50.8-13.9 13.9-31.2 18.4-50.8 19.3H128.9c-19.6-.9-37-5.4-50.8-19.3-13.9-13.9-18.4-31.2-19.3-50.8V127c.9-19.6 5.4-37 19.3-50.8 13.9-13.9 31.2-18.4 50.8-19.3h190.2c19.6.9 37 5.4 50.8 19.3 13.9 13.9 18.4 31.2 19.3 50.8v254z"/></svg></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 BH Bank</div>
+    </footer>
+    <script>
+  const slider = document.getElementById("slider");
+  const dots = document.getElementsByClassName("dot");
+  let index = 0;
+  let interval;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}vw)`;
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+    dots[index].classList.add("active");
+  }
+
+  function autoSlide() {
+    index = (index + 1) % 4;
+    updateSlider();
+  }
+
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(autoSlide, 3000);
+  }
+
+  function moveSlide(step) {
+    index = (index + step + 4) % 4;
+    updateSlider();
+    resetInterval();
+  }
+
+  function setSlide(i) {
+    index = i;
+    updateSlider();
+    resetInterval();
+  }
+
+  // Start slider
+  updateSlider();
+  interval = setInterval(autoSlide, 3000);
+</script>
+</body>
+</html>
